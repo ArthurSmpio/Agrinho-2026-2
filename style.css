@@ -195,14 +195,22 @@ h2 {
 }
 
 /* Estilização temporária do quadrado da imagem */
+/* Estilização da imagem integrada e controlada */
 .img-responsiva {
     width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    /* Define a largura máxima ideal para não estourar na tela */
+    max-width: 450px; 
+    /* Mantém a proporção da imagem sem distorcer */
+    height: 350px; 
+    object-fit: cover; 
+    
+    /* Centraliza a imagem caso o container mude de tamanho */
+    margin: 0 auto; 
+    display: block;
+    
+    /* Seus estilos visuais mantidos */
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-    display: block;
 }
 
 /* ==========================================================================
