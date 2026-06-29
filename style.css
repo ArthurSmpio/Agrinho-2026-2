@@ -195,16 +195,14 @@ h2 {
 }
 
 /* Estilização temporária do quadrado da imagem */
-.placeholder-img {
-    background: linear-gradient(45deg, #b7e4c7, #74c69d);
-    height: 300px;
+.img-responsiva {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
     border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #1b4332;
-    font-weight: 600;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    display: block;
 }
 
 /* ==========================================================================
